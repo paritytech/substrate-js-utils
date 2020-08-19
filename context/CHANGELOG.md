@@ -3,39 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+
+## Until Version 0.5.1 this project was part of https://github.com/paritytech/Nomidot/ 
+
 ## [0.5.1](https://github.com/paritytech/Nomidot/compare/v0.5.0...v0.5.1) (2020-05-12)
 
 
 ### Bug Fixes
 
 * **context:** Reset syncing to true when chaning provider ([#353](https://github.com/paritytech/Nomidot/issues/353)) ([a4a6d1d](https://github.com/paritytech/Nomidot/commit/a4a6d1d1c54fd4cfade63e09791c76b7e0b5a041))
-* better ux for handling no extension found ([#347](https://github.com/paritytech/Nomidot/issues/347)) ([43a735d](https://github.com/paritytech/Nomidot/commit/43a735dd10de49be4b39afe47769e1f8ff376512))
-* cart page nomination UX ([#350](https://github.com/paritytech/Nomidot/issues/350)) ([7cd64cf](https://github.com/paritytech/Nomidot/commit/7cd64cf8defd7c3a5a698feacf46c562e8f37a44))
-* clean up eslint warnings in front/ ([#317](https://github.com/paritytech/Nomidot/issues/317)) ([97c0276](https://github.com/paritytech/Nomidot/commit/97c02763f78a4596eadaebfc3675665d9d396f9b))
-* need to click twice to submit ([#348](https://github.com/paritytech/Nomidot/issues/348)) ([d55f422](https://github.com/paritytech/Nomidot/commit/d55f422863d056a9534fa0fd51b34a50c3e3f607))
-* remove useless check ([#328](https://github.com/paritytech/Nomidot/issues/328)) ([aba72f7](https://github.com/paritytech/Nomidot/commit/aba72f71580af584b2ea71042a68e2436419e3e3))
-* tooltip about stash vs contorller ([#331](https://github.com/paritytech/Nomidot/issues/331)) ([b15a02d](https://github.com/paritytech/Nomidot/commit/b15a02d6dcd5df10e8fbac4f6c6b46ca97a94191))
-* useless cache ([#325](https://github.com/paritytech/Nomidot/issues/325)) ([132e481](https://github.com/paritytech/Nomidot/commit/132e48163e6e8caa03c0f6d9540942f677bf29ba))
-* validators page ([#337](https://github.com/paritytech/Nomidot/issues/337)) ([868e125](https://github.com/paritytech/Nomidot/commit/868e12531850a3c0d5dd08f8a86367ded5264c24))
-
-
-### Features
-
-* extension check ([#327](https://github.com/paritytech/Nomidot/issues/327)) ([d4948db](https://github.com/paritytech/Nomidot/commit/d4948db81a1cb1e64a6d5b1cdd0900412f5b1897))
-
-
-
-
-
-# [0.5.0](https://github.com/paritytech/Nomidot/compare/v0.4.1...v0.5.0) (2020-04-24)
-
-
-### Features
-
-* nominate ([#300](https://github.com/paritytech/Nomidot/issues/300)) ([c6a72a4](https://github.com/paritytech/Nomidot/commit/c6a72a4c2fba8ad3a2ea886cfc7c2465ea1c2c00))
-
-
-
 
 
 ## [0.4.1](https://github.com/paritytech/Nomidot/compare/v0.4.0...v0.4.1) (2020-04-21)
@@ -81,13 +57,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **context:** Add local-storage dep ([#294](https://github.com/paritytech/Nomidot/issues/294)) ([f652190](https://github.com/paritytech/Nomidot/commit/f65219085f11c68e1f5d6eb4a8e1fb3bf3f57c46))
 
 
-### Features
-
-* extension signer ([#290](https://github.com/paritytech/Nomidot/issues/290)) ([97a6611](https://github.com/paritytech/Nomidot/commit/97a6611162be7d59f5010084906c9c968d17ed78))
-
-
-
-
 
 ## [0.3.23](https://github.com/paritytech/Nomidot/compare/v0.3.22...v0.3.23) (2020-04-09)
 
@@ -100,10 +69,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * accounts context ([#228](https://github.com/paritytech/Nomidot/issues/228)) ([909f380](https://github.com/paritytech/Nomidot/commit/909f3809a2e22e2977ccfcbeca66150171e88744))
-* accounts page ([#256](https://github.com/paritytech/Nomidot/issues/256)) ([1120cba](https://github.com/paritytech/Nomidot/commit/1120cbae9202c244d1b118e3f7c89ce64a7eb6a7))
-* cache accounts context results ([#285](https://github.com/paritytech/Nomidot/issues/285)) ([c25e304](https://github.com/paritytech/Nomidot/commit/c25e304cba0633bc6660543a43ea1edd66fb8b8d))
-
-
 
 
 
@@ -113,15 +78,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Bug Fixes
 
 * **context:** Remove useless keyring from context ([#241](https://github.com/paritytech/Nomidot/issues/241)) ([d03b432](https://github.com/paritytech/Nomidot/commit/d03b432b459ba10865a436870796596308b07ae7))
-
-
-### Features
-
-* accounts page ([#207](https://github.com/paritytech/Nomidot/issues/207)) ([ba81594](https://github.com/paritytech/Nomidot/commit/ba81594401e0fc01c299b1d4cafbc3d18e898e6b))
-* **gatsby:** make master build for Netlify ([#201](https://github.com/paritytech/Nomidot/issues/201)) ([6bdda24](https://github.com/paritytech/Nomidot/commit/6bdda24e183df95805ac801dcae65bce62748a6c))
-* app wide routing setup with @reach/router ([#191](https://github.com/paritytech/Nomidot/issues/191)) ([c73069c](https://github.com/paritytech/Nomidot/commit/c73069c823a539a216c5053d9e9dd938e7805692))
-
-
 
 
 
@@ -141,7 +97,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* Remove useless stuff from context & ui-components ([#161](https://github.com/paritytech/Nomidot/issues/161)) ([99466a7](https://github.com/paritytech/Nomidot/commit/99466a7a7d012326d8d536f848ac31f75ed7812d))
+* Remove useless stuff from context ([#161](https://github.com/paritytech/Nomidot/issues/161))
 
 
 
@@ -153,18 +109,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Bug Fixes
 
 * **context:** Also poll on system.health ([#142](https://github.com/paritytech/Nomidot/issues/142)) ([5033189](https://github.com/paritytech/Nomidot/commit/50331893d0175dfbe940c22a4d66bbf7867541be))
-
-
-
-
-
-## [0.3.17](https://github.com/paritytech/Nomidot/compare/v0.3.16...v0.3.17) (2020-02-05)
-
-
-### Features
-
-* **gatsby:** Inject accounts into header ([#136](https://github.com/paritytech/Nomidot/issues/136)) ([b095c3c](https://github.com/paritytech/Nomidot/commit/b095c3c8eb77197da2eb672deee2f65ae55459c4))
-
 
 
 
@@ -206,34 +150,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-
-# [0.3.0](https://github.com/paritytech/Nomidot/compare/v0.2.4...v0.3.0) (2020-01-02)
-
-
-### Bug Fixes
-
-* linting errors ([#51](https://github.com/paritytech/Nomidot/issues/51)) ([15c30a6](https://github.com/paritytech/Nomidot/commit/15c30a6814e9180feea9c695701ca58a2c2fce49))
-
-
-### Features
-
-* Prisma Server to watch a node ([#24](https://github.com/paritytech/Nomidot/issues/24)) ([ded1fc3](https://github.com/paritytech/Nomidot/commit/ded1fc3114200952d0aa12acc0b3bb6b42601960)), closes [#29](https://github.com/paritytech/Nomidot/issues/29) [#30](https://github.com/paritytech/Nomidot/issues/30) [#31](https://github.com/paritytech/Nomidot/issues/31)
-
-
-
-
-
-## [0.2.3](https://github.com/paritytech/Nomidot/compare/v0.2.2...v0.2.3) (2019-11-26)
-
-
-### Bug Fixes
-
-* Fix various little bugs ([#23](https://github.com/paritytech/Nomidot/issues/23)) ([24969fc](https://github.com/paritytech/Nomidot/commit/24969fc2fcd46456b94f4077859b9ae5632a24b4))
-
-
-
-
-
 ## [0.2.1](https://github.com/paritytech/Nomidot/compare/v0.2.0...v0.2.1) (2019-11-20)
 
 **Note:** Version bump only for package @substrate/context
@@ -253,12 +169,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * split up contexts, move context gate to gatsby, drop keyring ([3f22b2a](https://github.com/paritytech/Nomidot/commit/3f22b2a72c297f2a5e4cff3b9ba22b60bb9e9009))
 
 
-### Features
-
-* get and format injected accounts ([ae5deae](https://github.com/paritytech/Nomidot/commit/ae5deae12932b27e4358705f3b65a1acbc7d1b81))
-
-
-
 
 
 <a name="0.1.5"></a>
@@ -268,12 +178,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-
-
-# Change Log
-
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
 ## [0.1.3](https://github.com/paritytech/Nomidot/compare/v0.1.2...v0.1.3) (2019-11-11)
 
@@ -308,17 +212,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 # 0.1.0 (2019-05-10)
-
-
-### Bug Fixes
-
-* Prettify various holes in the UI ([#270](https://github.com/paritytech/substrate-light-ui/issues/270)) ([373b92f](https://github.com/paritytech/substrate-light-ui/commit/373b92f)), closes [#234](https://github.com/paritytech/substrate-light-ui/issues/234) [#267](https://github.com/paritytech/substrate-light-ui/issues/267) [#265](https://github.com/paritytech/substrate-light-ui/issues/265) [#264](https://github.com/paritytech/substrate-light-ui/issues/264)
-* **electron-app:** Make the binary work correctly ([#316](https://github.com/paritytech/substrate-light-ui/issues/316)) ([4104d98](https://github.com/paritytech/substrate-light-ui/commit/4104d98)), closes [#317](https://github.com/paritytech/substrate-light-ui/issues/317)
-
-
-### Features
-
-* Add app-wide alerts ([#253](https://github.com/paritytech/substrate-light-ui/issues/253)) ([500bfd3](https://github.com/paritytech/substrate-light-ui/commit/500bfd3))
-* **light-apps:** Make Identity Card an Identity Header ([#178](https://github.com/paritytech/substrate-light-ui/issues/178)) ([c16331a](https://github.com/paritytech/substrate-light-ui/commit/c16331a))
-* Block UI when disconnected (close [#217](https://github.com/paritytech/substrate-light-ui/issues/217)) ([#271](https://github.com/paritytech/substrate-light-ui/issues/271)) ([be72c41](https://github.com/paritytech/substrate-light-ui/commit/be72c41))
-* Signer ([#311](https://github.com/paritytech/substrate-light-ui/issues/311)) ([393877b](https://github.com/paritytech/substrate-light-ui/commit/393877b))
