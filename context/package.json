@@ -1,5 +1,5 @@
 {
-  "name": "@substrate/context",
+  "name": "@substrate/react-context",
   "version": "0.5.1",
   "author": "Parity Technologies <admin@parity.io>",
   "description": "Wrapper to connect React components to PolkadotJS Api",
@@ -12,12 +12,12 @@
     "access": "public"
   },
   "repository": "https://github.com/paritytech/substrate-js-utils",
+  "homepage": "https://github.com/paritytech/substrate-js-utils",
   "scripts": {
     "build": "tsc",
     "start": "yarn build --watch",
     "lint": "tsc --noEmit && node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --ext js,ts,tsx .",
-    "test": "echo skipped",
-    "prepare": "install-peers"
+    "test": "echo skipped"
   },
   "dependencies": {
     "@substrate/local-storage": "^2.2.9"
@@ -34,7 +34,6 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-simple-import-sort": "^5.0.0",
-    "install-peers-cli": "^2.2.0",
     "lerna": "^3.18.4",
     "prettier": "1.19.1",
     "react": "^16.13.1",
