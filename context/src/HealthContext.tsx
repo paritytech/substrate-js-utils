@@ -47,7 +47,7 @@ function getNodeStatus(
   let isNodeConnected = false;
   let hasPeers = false;
 
-  if (provider && provider.isConnected() && health && header) {
+  if (provider && provider.isConnected && health && header) {
     isNodeConnected = true;
     best = header.number.toNumber();
 
@@ -92,7 +92,7 @@ export function HealthContextProvider(
   // We wait for 2 seconds, and if we've been syncing for 2 seconds, then we
   // set isSyncing to true
   useEffect(() => {
-    let timer: number | undefined;
+    let timer: NodeJS.Timeout | undefined;
 
     if (!health) {
       return;

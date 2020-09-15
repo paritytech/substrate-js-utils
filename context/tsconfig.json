@@ -1,7 +1,18 @@
 {
   "compilerOptions": {
-    "outDir": "./lib"
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["dom", "esnext"],
+    "outDir": "./lib",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5"
   },
-  "extends": "../../tsconfig",
-  "include": ["./src"]
+  "exclude": ["**/generated/**/*", "node_modules", "public", ".cache"],
+  "include": ["src/**/*.js", "src/**/*.ts", "src/**/*.tsx"],
 }
