@@ -7,7 +7,6 @@
     "esModuleInterop": true,
     "jsx": "react",
     "lib": ["dom", "esnext"],
-    // "moduleResolution": "node",
     "outDir": "./lib",
     "resolveJsonModule": true,
     "skipLibCheck": true,
