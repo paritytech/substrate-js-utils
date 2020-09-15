@@ -1,15 +1,57 @@
 ## Available Scripts
 
-In the project directory, you can run:
+This repo contains a set of utilities provided as react context.
 
-### `yarn run start`
+### Usage example
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## With Polkadot-js api
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+in your App.js/ts
+```js
+import { ApiPromiseContextProvider } from '@substrate/react-context';
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
+const WS_PROVIDER = process.env.REACT_APP_WS_PROVIDER;
+
+	if (!WS_PROVIDER) {
+		console.error('REACT_APP_WS_PROVIDER not set');
+		return null;
+	}
+
+	const provider = new WsProvider(WS_PROVIDER);
+
+	return (
+		<>
+      <ApiPromiseContextProvider provider={provider}>
+        <MainApp />      
+      </ApiPromiseContextProvider>
+```
+
+Then you can access the api anywhere in your app:
+
+```js
+import { ApiPromiseContext } from '@substrate/context';
+
+export default function ()  {
+    // get the api and the isApiReady flag
+		const { api, isApiReady } = useContext(ApiPromiseContext);
+
+	useEffect(() => {
+    // return early if the api is not ready
+		if (!isApiReady) {
+			return;
+		}
+
+		let unsubscribe: () => void;
+
+		api.derive.chain.bestNumber((number) => {
+			setCurrentBlock(number);
+		})
+			.then(unsub => {unsubscribe = unsub;})
+			.catch(e => console.error(e));
+
+		return () => unsubscribe && unsubscribe();
+	}, [api, isApiReady]);
+
+}
+```
