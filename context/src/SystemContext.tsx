@@ -82,7 +82,7 @@ export function SystemContextProvider(
     }
 
     // Create a new RPC client each time we change provider
-    setRpc(new Rpc(registryRef.current, provider));
+    setRpc(new Rpc('instance',registryRef.current, provider));
   }, [provider]);
 
   useEffect(() => {

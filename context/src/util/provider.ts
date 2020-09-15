@@ -14,7 +14,7 @@ export function providerConnected(
   provider: ProviderInterface
 ): Observable<boolean> {
   return new Observable(subscriber => {
-    if (provider.isConnected()) {
+    if (provider.isConnected) {
       subscriber.next(true);
     } else {
       subscriber.next(false);
