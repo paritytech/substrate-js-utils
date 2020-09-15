@@ -23,11 +23,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN_ACTION }}
+          token: ${{ secrets.BUMP_VERSION_TOKEN }}
       - name: Bump version and push tag
         uses: TriPSs/conventional-changelog-action@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN_ACTION }}
+          github-token: ${{ secrets.BUMP_VERSION_TOKEN }}
           git-message: 'chore(release): {version}'
           preset: 'angular'
           tag-prefix: ''
