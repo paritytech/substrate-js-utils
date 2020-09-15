@@ -31,4 +31,5 @@ jobs:
           git-message: 'chore(release): {version}'
           preset: 'angular'
           tag-prefix: ''
-          output-file: 'CHANGELOG.md'
+          output-file: 'false'
+          version-file: './react-context/package.json'
