@@ -33,11 +33,11 @@ Then you can access the api anywhere in your app:
 import { ApiPromiseContext } from '@substrate/context';
 
 export default function ()  {
-    // get the api and the isApiReady flag
+    	// get the api and the isApiReady flag
 		const { api, isApiReady } = useContext(ApiPromiseContext);
 
 	useEffect(() => {
-    // return early if the api is not ready
+    	// return early if the api is not ready
 		if (!isApiReady) {
 			return;
 		}
