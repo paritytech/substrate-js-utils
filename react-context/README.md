@@ -13,6 +13,8 @@ import { ApiPromiseContextProvider } from '@substrate/react-context';
 
 const WS_PROVIDER = process.env.REACT_APP_WS_PROVIDER;
 
+const App = () => {
+
 	if (!WS_PROVIDER) {
 		console.error('REACT_APP_WS_PROVIDER not set');
 		return null;
@@ -21,29 +23,32 @@ const WS_PROVIDER = process.env.REACT_APP_WS_PROVIDER;
 	const provider = new WsProvider(WS_PROVIDER);
 
 	return (
-		<>
-      <ApiPromiseContextProvider provider={provider}>
-        <MainApp />      
-      </ApiPromiseContextProvider>
+		<ApiPromiseContextProvider provider={provider}>
+			<MainApp />      
+		</ApiPromiseContextProvider>
+	);
+};
+
 ```
 
-Then you can access the api anywhere in your app:
+Then you can access the api anywhere in your app using the hook `useContext(ApiPromiseContext)`:
 
 ```js
 import { ApiPromiseContext } from '@substrate/context';
 
 export default function ()  {
-    	// get the api and the isApiReady flag
+		// get the api and the isApiReady flag
 		const { api, isApiReady } = useContext(ApiPromiseContext);
 
 	useEffect(() => {
-    	// return early if the api is not ready
+		// return early if the api is not ready
 		if (!isApiReady) {
 			return;
 		}
 
 		let unsubscribe: () => void;
 
+		// use the api
 		api.derive.chain.bestNumber((number) => {
 			setCurrentBlock(number);
 		})
