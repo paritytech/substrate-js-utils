@@ -1,3 +1,12 @@
+# [0.7.0](https://github.com/paritytech/substrate-js-utils/compare/0.6.2...0.7.0) (2020-09-16)
+
+
+### Features
+
+* add type handling for ApiPromiseContext ([#14](https://github.com/paritytech/substrate-js-utils/issues/14)) ([5159401](https://github.com/paritytech/substrate-js-utils/commit/51594012765d8310228df059e902dc67d7775af3))
+
+
+
 ## [0.6.2](https://github.com/paritytech/substrate-js-utils/compare/0.6.1...0.6.2) (2020-09-16)
 
 
