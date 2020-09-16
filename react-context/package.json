@@ -31,9 +31,8 @@
     "@substrate/local-storage": "^2.2.9"
   },
   "devDependencies": {
-    "@polkadot/api": "*",
-    "@polkadot/extension-dapp": "^0.34.1",
-    "@polkadot/extension-inject": "*",
+    "@polkadot/api": "^1.33.1",
+    "@polkadot/extension-inject": "^0.34.1",
     "@polkadot/rpc-provider": "^1.33.1",
     "@polkadot/types": "^1.33.1",
     "@types/react": "^16.9.49",
@@ -52,8 +51,8 @@
     "typescript": "^4.0.2"
   },
   "peerDependencies": {
-    "@polkadot/api": "*",
-    "@polkadot/extension-inject": "*",
-    "react": "*"
+    "@polkadot/api": "^1.33.1",
+    "@polkadot/extension-inject": "^0.34.1",
+    "react": "^16.13.1"
   }
 }

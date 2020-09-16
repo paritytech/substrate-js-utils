@@ -964,7 +964,7 @@
     memoizee "^0.4.14"
     rxjs "^6.6.3"
 
-"@polkadot/api@*", "@polkadot/api@1.33.1":
+"@polkadot/api@1.33.1", "@polkadot/api@^1.33.1":
   version "1.33.1"
   resolved "https://registry.yarnpkg.com/@polkadot/api/-/api-1.33.1.tgz#40642bfd44b4764c634aaf7cd8b5becbba8dd284"
   integrity sha512-kUTd+vYtlR6wrZYAPpfJWectqg268v5XTs9x0ylN6yS5aDdtrhOhbZEp8IulyA3P8XR/mJdS3Plymk1GmagCIA==
@@ -983,17 +983,7 @@
     eventemitter3 "^4.0.7"
     rxjs "^6.6.3"
 
-"@polkadot/extension-dapp@^0.34.1":
-  version "0.34.1"
-  resolved "https://registry.yarnpkg.com/@polkadot/extension-dapp/-/extension-dapp-0.34.1.tgz#5dd84bc24d33d36ea5d2b97826a93f1a48370aa4"
-  integrity sha512-/wHAEpAxmlX5yq9t9a5EuXZEBSksreL7wH+h7XX5970v0XTAOFp+gyvDaWSThbLembq1Xq6eAkM1qrtemLXJLQ==
-  dependencies:
-    "@babel/runtime" "^7.11.2"
-    "@polkadot/extension-inject" "0.34.1"
-    "@polkadot/util" "^3.4.1"
-    "@polkadot/util-crypto" "^3.4.1"
-
-"@polkadot/extension-inject@*", "@polkadot/extension-inject@0.34.1":
+"@polkadot/extension-inject@^0.34.1":
   version "0.34.1"
   resolved "https://registry.yarnpkg.com/@polkadot/extension-inject/-/extension-inject-0.34.1.tgz#b62e131bf5398d07790ad2c5a39b0eece1d6065d"
   integrity sha512-d5tCFtQuZTyMUx81h4u9KTJLWwBITRXoZEaM2oOfIUb1585tl/hIvb1jgRrc4YWghnCOAb4j2iqfQWl0dvaiQA==
@@ -1158,9 +1148,9 @@
   integrity sha1-aaI6OtKcrwCX8G7aWbNh7i8GOfY=
 
 "@types/node@*", "@types/node@>= 8":
-  version "14.10.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.10.1.tgz#cc323bad8e8a533d4822f45ce4e5326f36e42177"
-  integrity sha512-aYNbO+FZ/3KGeQCEkNhHFRIzBOUgc7QvcVNKXbfnhDkSfwUv91JsQQa10rDgKSTSLkXZ1UIyPe4FJJNVgw1xWQ==
+  version "14.10.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.10.2.tgz#9b47a2c8e4dabd4db73b57e750b24af689600514"
+  integrity sha512-IzMhbDYCpv26pC2wboJ4MMOa9GKtjplXfcAqrMeNJpUUwpM/2ATt2w1JPUXwS6spu856TvKZL2AOmeU2rAxskw==
 
 "@types/node@11.11.6":
   version "11.11.6"
