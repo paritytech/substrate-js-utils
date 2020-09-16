@@ -1,6 +1,6 @@
 {
   "name": "@substrate/react-context",
-  "version": "0.7.1",
+  "version": "0.7.1-beta2",
   "author": "Parity Technologies <admin@parity.io>",
   "description": "Wrapper to connect React components to PolkadotJS Api",
   "files": [
@@ -28,12 +28,11 @@
     "prepare": "yarn build"
   },
   "dependencies": {
-    "@polkadot/extension-dapp": "^0.34.1",
     "@substrate/local-storage": "^2.2.9"
   },
   "devDependencies": {
     "@polkadot/api": "^1.33.1",
-    "@polkadot/extension-inject": "*",
+    "@polkadot/extension-inject": "^0.34.1",
     "@polkadot/rpc-provider": "^1.33.1",
     "@polkadot/types": "^1.33.1",
     "@types/react": "^16.9.49",
@@ -52,8 +51,8 @@
     "typescript": "^4.0.2"
   },
   "peerDependencies": {
-    "@polkadot/api": "*",
-    "@polkadot/extension-inject": "*",
-    "react": "*"
+    "@polkadot/api": "^1.33.1",
+    "@polkadot/extension-inject": "^0.34.1",
+    "react": "^16.13.1"
   }
 }
