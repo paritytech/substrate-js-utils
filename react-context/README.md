@@ -34,7 +34,7 @@ const App = () => {
 Then you can access the api anywhere in your app using the hook `useContext(ApiPromiseContext)`:
 
 ```js
-import { ApiPromiseContext } from '@substrate/context';
+import { ApiPromiseContext } from '@substrate/react-context';
 
 export default function ()  {
 		// get the api and the isApiReady flag
