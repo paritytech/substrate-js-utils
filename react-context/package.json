@@ -1,6 +1,6 @@
 {
   "name": "@substrate/react-context",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "author": "Parity Technologies <admin@parity.io>",
   "description": "Wrapper to connect React components to PolkadotJS Api",
   "files": [
@@ -13,7 +13,13 @@
   },
   "repository": "https://github.com/paritytech/substrate-js-utils/tree/master/react-context",
   "homepage": "https://github.com/paritytech/substrate-js-utils/tree/master/react-context",
-  "keywords": ["polkadot", "substrate", "api", "react", "kusama"],
+  "keywords": [
+    "polkadot",
+    "substrate",
+    "api",
+    "react",
+    "kusama"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "yarn build --watch",

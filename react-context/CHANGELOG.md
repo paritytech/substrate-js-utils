@@ -1,3 +1,12 @@
+## [0.7.1](https://github.com/paritytech/substrate-js-utils/compare/0.7.0...0.7.1) (2020-09-16)
+
+
+### Bug Fixes
+
+* publish lib folder ([4daed1b](https://github.com/paritytech/substrate-js-utils/commit/4daed1bf2d3bbeb50b6ab315492b9e2e943b119e))
+
+
+
 # [0.7.0](https://github.com/paritytech/substrate-js-utils/compare/0.6.2...0.7.0) (2020-09-16)
 
 
