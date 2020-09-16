@@ -6,7 +6,7 @@ This repo contains a set of utilities provided as react context.
 
 ## With Polkadot-js api
 
-in your App.js/ts
+in your App.jsx (or App.tsx)
 ```js
 import { ApiPromiseContextProvider } from '@substrate/react-context';
 

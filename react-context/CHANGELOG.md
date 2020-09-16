@@ -8,7 +8,7 @@
 
 
 # [0.6.0](https://github.com/paritytech/substrate-js-utils/compare/acac3ca010ae0c04b42070d35bde3cb2ee06a953...0.6.0) (2020-09-15)
-* This package is not hoster on https://github.com/paritytech/substrate-js-utils. It used to be https://github.com/paritytech/Nomidot.
+* This package is now hosted on https://github.com/paritytech/substrate-js-utils. It used to be https://github.com/paritytech/Nomidot.
 
 ## [0.5.1](https://github.com/paritytech/Nomidot/compare/v0.5.0...v0.5.1) (2020-05-12)
 
