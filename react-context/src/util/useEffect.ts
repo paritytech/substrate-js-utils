@@ -19,5 +19,6 @@ export function useDidUpdateEffect(
   return useEffect(() => {
     if (didMountRef.current) fn();
     else didMountRef.current = true;
-  }, inputs);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inputs]);
 }
