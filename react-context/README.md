@@ -10,7 +10,6 @@ in your App.jsx (or App.tsx)
 ```js
 import { ApiPromiseContextProvider } from '@substrate/react-context';
 
-
 const WS_PROVIDER = process.env.REACT_APP_WS_PROVIDER;
 
 const App = () => {
