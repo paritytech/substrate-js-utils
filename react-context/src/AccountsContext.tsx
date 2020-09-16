@@ -426,7 +426,7 @@ export function AccountsContextProvider(props: Props): React.ReactElement {
   ]);
 
   useEffect(() => {
-    fetchAccounts();
+    void fetchAccounts();
     fetchCachedRpcResults();
     fetchCachedUserSession();
   }, [
