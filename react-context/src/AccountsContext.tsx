@@ -203,7 +203,7 @@ export function AccountsContextProvider(props: Props): React.ReactElement {
       });
       return subs;
     }
-  }, [state.allAccounts]);
+  }, [api.derive.balances, state.allAccounts]);
 
   const getDerivedStaking = useCallback((): Subscriptions | undefined => {
     if (state.allStashes) {
@@ -426,7 +426,7 @@ export function AccountsContextProvider(props: Props): React.ReactElement {
   ]);
 
   useEffect(() => {
-    fetchAccounts();
+    void fetchAccounts();
     fetchCachedRpcResults();
     fetchCachedUserSession();
   }, [

@@ -82,7 +82,7 @@ export function SystemContextProvider(
     }
 
     // Create a new RPC client each time we change provider
-    setRpc(new Rpc('instance',registryRef.current, provider));
+    setRpc(new Rpc('instance', registryRef.current, provider));
   }, [provider]);
 
   useEffect(() => {
@@ -109,11 +109,13 @@ export function SystemContextProvider(
       )
       .subscribe(([_chain, _genesisHash, _name, _properties, _version]) => {
         l.log(
+          // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
           `Rpc connected to chain "${_chain}" with properties ${JSON.stringify(
             _properties
           )} via ${
+            // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
             provider instanceof WsProvider
-              ? // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+              ? // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-ignore WsProvider.endpoint is private, but we still use it
                 // here, to have a nice log
                 provider.endpoint

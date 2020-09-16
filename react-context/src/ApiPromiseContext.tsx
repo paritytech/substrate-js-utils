@@ -3,10 +3,11 @@
 // of the Apache-2.0 license. See the LICENSE file for details.
 
 import { ApiPromise } from '@polkadot/api';
+import { TypeRegistry } from '@polkadot/types';
 import { logger } from '@polkadot/util';
 import React, { useEffect, useState } from 'react';
 
-import { ApiRxContextProviderProps } from './types';
+import { ApiPromiseContextProviderProps } from './types';
 import { useDidUpdateEffect } from './util';
 
 export interface ApiPromiseContextType {
@@ -16,14 +17,16 @@ export interface ApiPromiseContextType {
 
 const l = logger('api-context');
 
+const registry = new TypeRegistry();
+
 export const ApiPromiseContext: React.Context<ApiPromiseContextType> = React.createContext(
   {} as ApiPromiseContextType
 );
 
 export function ApiPromiseContextProvider(
-  props: ApiRxContextProviderProps
+  props: ApiPromiseContextProviderProps
 ): React.ReactElement {
-  const { children = null, provider } = props;
+  const { children = null, provider, types } = props;
   const [apiPromise, setApiPromise] = useState<ApiPromise>(
     new ApiPromise({ provider })
   );
@@ -33,7 +36,7 @@ export function ApiPromiseContextProvider(
     // We want to fetch all the information again each time we reconnect. We
     // might be connecting to a different node, or the node might have changed
     // settings.
-    setApiPromise(new ApiPromise({ provider }));
+    setApiPromise(new ApiPromise({ provider, types }));
 
     setIsReady(false);
   }, [provider]);
@@ -42,11 +45,17 @@ export function ApiPromiseContextProvider(
     // We want to fetch all the information again each time we reconnect. We
     // might be connecting to a different node, or the node might have changed
     // settings.
-    apiPromise.isReady.then(_ => {
-      l.log(`Api ready.`);
-      setIsReady(true);
-    });
-  }, [apiPromise.isReady]);
+    apiPromise.isReady
+      .then(_ => {
+        if (types) {
+          registry.register(types);
+        }
+
+        l.log(`Api ready.`);
+        setIsReady(true);
+      })
+      .catch(e => console.error(e));
+  }, [apiPromise.isReady, types]);
 
   return (
     <ApiPromiseContext.Provider

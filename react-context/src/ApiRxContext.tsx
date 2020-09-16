@@ -69,7 +69,7 @@ export function ApiRxContextProvider(
 
       return (): void => subscription.unsubscribe();
     }
-  }, [isReady]);
+  }, [apiRx.consts.staking.bondingDuration, apiRx.derive.balances, isReady]);
 
   return (
     <ApiRxContext.Provider
