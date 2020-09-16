@@ -52,6 +52,5 @@ export default function ()  {
 
 		return () => unsubscribe && unsubscribe();
 	}, [api, isApiReady]);
-
 }
 ```
