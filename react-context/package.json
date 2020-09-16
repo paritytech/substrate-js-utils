@@ -13,7 +13,7 @@
   },
   "repository": "https://github.com/paritytech/substrate-js-utils/tree/master/react-context",
   "homepage": "https://github.com/paritytech/substrate-js-utils/tree/master/react-context",
-  "keywords": ["polkadot", "substrate", "api", "react", "kusama"]
+  "keywords": ["polkadot", "substrate", "api", "react", "kusama"],
   "scripts": {
     "build": "tsc",
     "start": "yarn build --watch",
