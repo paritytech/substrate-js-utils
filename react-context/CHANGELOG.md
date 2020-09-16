@@ -1,4 +1,13 @@
-# 0.6.0 (2020-09-15)
+## [0.6.1](https://github.com/paritytech/substrate-js-utils/compare/0.6.0...0.6.1) (2020-09-16)
+
+
+### Bug Fixes
+
+* Testing the workflow ([#10](https://github.com/paritytech/substrate-js-utils/issues/10)) ([5ea6f76](https://github.com/paritytech/substrate-js-utils/commit/5ea6f76cf834ff8b81bad6a1384bf4b36f44225f))
+
+
+
+# [0.6.0](https://github.com/paritytech/substrate-js-utils/compare/acac3ca010ae0c04b42070d35bde3cb2ee06a953...0.6.0) (2020-09-15)
 
 
 ### Bug Fixes
