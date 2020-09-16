@@ -6,6 +6,7 @@ import {
   DeriveBalancesAll,
   DeriveStakingQuery,
 } from '@polkadot/api-derive/types';
+import { web3Accounts, web3Enable } from '@polkadot/extension-dapp';
 import {
   InjectedAccountWithMeta,
   InjectedExtension,
@@ -268,10 +269,6 @@ export function AccountsContextProvider(props: Props): React.ReactElement {
    */
   const fetchAccounts = useCallback(async () => {
     if (typeof window !== `undefined`) {
-      const { web3Accounts, web3Enable } = await import(
-        '@polkadot/extension-dapp'
-      );
-
       const extensions: InjectedExtension[] = await web3Enable(originName);
 
       if (!extensions.length) {

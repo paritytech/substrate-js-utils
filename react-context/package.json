@@ -28,11 +28,11 @@
     "prepare": "yarn build"
   },
   "dependencies": {
+    "@polkadot/extension-dapp": "^0.34.1",
     "@substrate/local-storage": "^2.2.9"
   },
   "devDependencies": {
-    "@polkadot/api": "*",
-    "@polkadot/extension-dapp": "^0.34.1",
+    "@polkadot/api": "^1.33.1",
     "@polkadot/extension-inject": "*",
     "@polkadot/rpc-provider": "^1.33.1",
     "@polkadot/types": "^1.33.1",
